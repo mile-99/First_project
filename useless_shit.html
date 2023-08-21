@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+     <!-- This is just a test, my 1st one actually -->
+     <title>Going under v2.0</title>
+     <meta charset="utf-8">
+     <meta name="author" content="@that-blue-sky"/>
+     <meta property="og:title" content="Just a silly page"/>
+     <meta name="description" content="This is just a silly page made by a silly person for silly purposes. Don't come in, don't be silly."/>
+     <meta property="og:image" content="https://i.pinimg.com/originals/be/4a/2e/be4a2ec3821405f270c5f27fbdc7264f.jpg"/>
+     <meta name="twitter:title" content="Just a silly page"/>
+     <meta property="og:description" content="This is just a silly page made by a silly person for silly purposes. Don't come in, don't be silly."/>
+     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+     <link rel="icon" type="image/x-icon" href="images/cabin.png"/>
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"/>
+     <meta name="viewport" content="width=550"/>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="firsttitle"> HI </h1>
+            <h2>This is merely a test page</h2>
+            <p id="welcome-message">Welcome, user</p>
+        </header>
+        <hr>
+        <nav>
+            <ul id="menu">
+                <li id="menu1"><a href="index.html">HOME</a></li>
+                <li id="menu2"><a href="useless_shit.html">Useless shit</a></li>
+                <li id="menu3"><a href="uninteresting_trash.html">Uninteresting trash</a></li>
+                <li id="menu4"><a href="dismissible_crap.html">Dismissible crap</a></li>
+            </ul>
+        </nav>
+        <br>
+        <main>
+            <h3>Useless shit</h3>
+            <form>
+                <h5>Please, give us your data so we can save it for no reason whatsoever.</h5>
+                <input name="username" type="text" required="" placeholder="Write your username here">
+                <input name="password" type="password" required="" placeholder="Write your password here" maxlength="20" minlength="5">
+                <input name="birthdate" type="date">
+                <input name="send" type="submit">
+            </form>
+            <h5>Now, let's try something more specific.</h5>
+            <form method="post" action="Recommendations.js" >
+                <fieldset>
+                    <legend>User data</legend>
+
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" maxlenght="40" minlength="1" required>
+                    <br><br>
+                    <label for="lastname">Last name</label>
+                    <input id="lastname" name="lastname" type="text" placeholder="Enter your last name" required>
+                    <br><br>
+                    <label for="age">Age</label>
+                    <input id="age" name="age" type="number" placeholder="Enter your age" max="120" min="0" required>
+                    <br><br>
+                    <label for="bdate">Birth date</label>
+                    <input id="bdate" name="bdate" type="date" required>
+                    <br><br>
+                    <label for="reason">Reason</label>
+                    <select id="reason" name="reason">
+                        <option value="000" selected disabled>Select one...</option>
+                        <option value="001">Tip</option>
+                        <option value="002">Complaint</option>
+                        <option value="003">Question</option>
+                    </select>
+                    <br><br>
+                    <label for="comment">Message</label>
+                    <textarea id="comment" name="comment" placeholder="Type here what you feel about my page" required></textarea>
+                    <br><br>
+                    <label>Do you agree with sending me all your money?</label>
+                    <br>
+                    <label>Yes</label>
+                    <input id="choice1" name="choice" type="radio">
+                    <br>
+                    <label>Of course</label>
+                    <input id="choice2" name="choice" type="radio">
+                    <br>
+                    <label>No way</label>
+                    <input id="choice3" name="choice" type="radio" disabled>
+                    <br><br>
+                    <label>Did you like my form?</label>
+                    <input id="likeornot" name="likeornot" type="checkbox">
+                    <br>
+                </fieldset>
+                <br>
+                <input type="submit" value="Send useful tip">
+            </form>
+        </main> 
+        <footer>
+            <p>@Copyright 2066 by nobody. All rights reversed.</p>
+        </footer>
+        <script defer src="scripts/main.js"></script>
+    </body>
+
+</html>
