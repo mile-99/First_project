@@ -1,14 +1,6 @@
 const miTitulo = document.querySelector('h1');
 miTitulo.textContent = '¡Hello world!';
 
-let horario
-horario = 1900
-if (horario === 1900) {
-    alert('Its time for bed');
-} else {
-    alert('It is not time for bed');
-}
-
 function multiplica(num1, num2) {   //REVISAR
     let resultado = num1 * num2;
     return resultado;
@@ -30,7 +22,7 @@ miFoto.onclick = function () {
 }
 
 let MyButton = document.querySelector ('#myfirstbutton');
-let MyGreeting = document.querySelector ('#opinion');
+let MyGreeting = document.querySelector ('#welcome-message');
 function SetNewUsername() {
     let NewUsername = prompt ('Please, enter your name pal...');
     if (!NewUsername) {
@@ -50,3 +42,26 @@ if (!localStorage.getItem('nombre')) {
 MyButton.onclick = function() {
     SetNewUsername();
 }
+
+// REVISAR:
+/*const list = document.createElement('ul');
+const info = document.createElement('p');
+const html = document.querySelector('html');
+
+info.textContent = 'Below is a dynamic list. Click anywhere on the page to add a new list item. Click an existing list item to change its text to something else.';
+
+document.body.appendChild(info);
+document.body.appendChild(list);
+
+html.onclick = function() {
+  const listItem = document.createElement('li');
+  const listContent = prompt('What content do you want the list item to have?');
+  listItem.textContent = listContent;
+  list.appendChild(listItem);
+
+  listItem.onclick = function(e) {
+    e.stopPropagation();
+    const listContent = prompt('Enter new content for your list item');
+    this.textContent = listContent;
+  }
+}*/
